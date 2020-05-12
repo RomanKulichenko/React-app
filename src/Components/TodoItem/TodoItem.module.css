@@ -1,0 +1,127 @@
+.item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   align-items: flex-start;
+
+   /* color: rgb(139, 121, 255); */
+   color: rgb(61, 184, 255);
+   margin: 10px 0;
+   padding: 5px 10px;
+   /* height: 45px; */
+   /* width: 600px; */
+   width: 100%;
+   background: rgba(77, 77, 77, 0.815);
+   background: rgba(77, 77, 77, 0.582);
+   border-radius: 4px;
+
+   font-size: 1.2rem;
+}
+
+
+.text {
+   display: inline-flex;
+   width: 565px;
+   text-align: justify;
+   /* word-break: break-all; */
+}
+/*=======================================================================*/
+
+
+/*===============================CHECKBOX=================================*/
+
+.TodoItemCheckbox {
+   position: relative;
+   margin-right: 15px;
+   margin-bottom: -3px;
+   height: 20px;
+   width: 65px;
+   -webkit-appearance: none;
+   background: linear-gradient(0deg, #333, #000);
+   outline: none;
+   border-radius: 20px;
+   box-shadow: 0 0 0 4px #353535, 0 0 10px rgb(190, 172, 255),
+      inset 0 0 10px rgb(0, 0, 0), 0 5px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.TodoItemCheckbox:hover {
+   box-shadow: 0 0 0 4px #353535, 0 0 20px rgb(190, 172, 255),
+      inset 0 0 10px rgb(0, 0, 0), 0 5px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.TodoItemCheckbox:checked {
+   box-shadow: 0 0 2px #6dd1ff, 0 0 0 4px #353535,  0 0 10px rgb(190, 172, 255),
+      inset 0 0 10px rgb(0, 0, 0), 0 5px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 0, 0, 0.2);
+   background: linear-gradient(0deg, #6dd1ff, #20b7ff);
+}
+/* .TodoItemCheckbox:checked:hover {
+   box-shadow: 0 0 2px #6dd1ff, 0 0 0 4px #353535, 0 0 20px rgb(190, 172, 255),
+      inset 0 0 10px rgb(0, 0, 0), 0 5px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 0, 0, 0.2);
+   background: linear-gradient(0deg, #6dd1ff, #20b7ff);
+} */
+
+.TodoItemCheckbox:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 20px;
+   width: 40px;
+   background: linear-gradient(0deg, #000, #6b6b6b);
+   border-radius: 20px;
+   box-shadow: 0 0 0 1px #232323;
+   transform: scale(0.96);
+   transition: 0.5s;
+}
+
+.TodoItemCheckbox:checked:before {
+   left: 25px;
+}
+
+.TodoItemCheckbox:after {
+   content: '';
+   position: absolute;
+   top: calc(50% - 3px);
+   left: 25px;
+   height: 6px;
+   width: 6px;
+   background: linear-gradient(0deg,#6b6b6b,#000);
+   border-radius: 50%;
+   transition: 0.5s;
+}
+
+.TodoItemCheckbox:checked:after {
+   left: 50px;
+   background: rgb(0, 204, 255);
+   box-shadow: 0 0 7px rgb(0, 204, 255);
+}
+/*=======================================================================*/
+
+
+/*============================DELETE BUTTON==============================*/
+
+.button {
+   visibility: hidden;
+   padding: 5px 15px;
+   background: none;
+   border: 1px solid red;
+   color: red;
+   border-radius: 4px;
+   outline: none;
+   margin-left: 10px;
+
+}
+
+.button:hover {
+   background: linear-gradient(45deg, #583838, #1a0e0e);
+}
+
+
+.button:active {
+   text-shadow: 0 0 15px red;
+   box-shadow: 0 0 10px red;
+}
+
+.visible {
+   visibility: visible;
+}

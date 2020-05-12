@@ -1,0 +1,44 @@
+.wrapper {
+   display: flex;
+   justify-content: space-evenly;
+   width: 100%;
+   margin-bottom: 30px;
+}
+
+.input {
+   background: none;
+   color: rgb(182, 174, 177);
+   /* width: '500px'; */
+   width: 100%;
+   height: 40px;
+   padding: 5px 0;
+   border: none;
+   border-bottom: 2px solid rgb(139, 121, 255);
+   /* margin: 30px 0; */
+   outline: none;
+}
+
+.button {
+   /* background: none; */
+   color: rgb(182, 174, 177);
+   padding: 0 35px;
+   /* height: 45px; */
+   background: linear-gradient(0deg,rgb(79, 73, 251),rgb(106, 103, 255));
+   box-shadow: inset 0 0 2px rgb(139, 137, 255);
+   border-radius: 3px;
+   border: none;
+   width: 170px;
+   height: 30px;
+   margin-top: 10px;
+
+   outline: none;
+}
+
+.button:hover{
+   box-shadow: 0 0 3px rgb(106, 103, 255);
+   background: linear-gradient(0deg,rgb(106, 103, 255), rgb(79, 73, 251));
+}
+
+.button:active{
+   background: linear-gradient(0deg,rgb(93, 79, 187), rgb(172, 121, 255));
+}

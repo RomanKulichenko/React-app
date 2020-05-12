@@ -1,0 +1,34 @@
+.App {
+  /* text-align: center; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-image: url(./img/unnamed.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  /* background: var(--bg-color); */
+  /* background: linear-gradient(45deg, rgb(64, 53, 80), rgb(13, 10, 19)); */
+  /* color: rgb(152, 61, 255); */
+  /* color: var(--main-color); */
+}
+
+
+/* SPIN ANIMATION */
+
+@keyframes Spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: Spin infinite 20s linear;
+  }
+}
